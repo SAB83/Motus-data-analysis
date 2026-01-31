@@ -1,0 +1,28 @@
+# Copy to config.yml and edit (config.yml is git-ignored)
+project_id: 164
+motus_dir: "/path/to/your/motus/project_dir"
+
+# Optional: Google Maps API key for ggmap (only needed if you use ggmap)
+google_api_key: ""
+
+# Optional: subset tags for plotting / transitions
+tag_ids_keep: [71168]
+
+# Optional: start date filter (UTC). Leave blank to keep all.
+start_date_utc: "2018-01-01 00:00:00"
+
+activity_filter:
+  minLen: 3
+  maxLen: 4
+  maxRuns: 1000
+  ratio: 0.99
+
+blocking:
+  enabled: true
+  month_blocks:
+    - months: [11, 12, 1]
+      tag_ids: [26032, 26033, 26040]
+  date_blocks:
+    - start: "2018-07-01"
+      end: "2018-07-06"
+      tag_ids: [26035]
